@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Tres</title>
+    <style type="text/css">
+        table {
+          width: 500px;
+          border-collapse: collapse;
+          font-size: 12px;
+          font-family: sans-serif
+        }
+
+        table, th, td {
+          border: 1px solid rgb(255, 1, 255);
+          padding: 4px;
+        }
+
+        tbody{
+          text-align: left;
+
+        }
+        .right { 
+          text-align: right;
+        }
+        .header{
+          font-size: 20px;
+          text-align: center;
+          border:  rgb(89, 0, 255);
+          font-weight: bold;
+          padding-top: 30px;
+        }
+        .sub-header{
+          text-align: center;
+          font-weight: bold;
+          border:  rgb(89, 0, 255);
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+        .total{
+          font-weight: bolder;
+          text-align: right;
+        }
+    </style>
+</head>
+<body>
+  <table>
+      <thead>
+        <tr>
+          <td colspan="2" class="header">Cliente</td>
+          <td colspan="2" class="header">Remitente</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="sub-header">Manuela Sanchez Sepulveda</td>
+          <td colspan="2" class="sub-header">María Fernanda Mira Sepulveda</td>
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Descripción</th>
+        <th>Cantidad</th>
+        <th>Precio Unitario</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>Procesador AMD Ryzen 7</td>
+        <td>1.00</td>
+        <td>$50.00</td>
+        <td>$50.00</td>
+      </tr>
+      <tr>
+        <td>Tarjeta de Video</td>
+        <td>2.00</td>
+        <td>$800.00</td>
+        <td>$1,600.00</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3" class="right">Subtotal</td>
+        <td>$1,650.00</td>
+      </tr>
+      <tr>
+        <td colspan="3" class="right">Descuento</td>
+        <td>$0.00</td>
+      </tr>
+      <tr>
+        <td colspan="3" class="right">Subtotal con descuento</td>
+        <td>$1,650.00</td>
+      </tr>
+      <tr>
+        <td colspan="3" class="right">Impuestos</td>
+        <td>$264.00</td>
+      </tr>
+      <tr>
+        <td colspan="3" class="total">Total</td>
+        <td>$1,914.00</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
